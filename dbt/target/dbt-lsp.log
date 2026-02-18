@@ -1,0 +1,86 @@
+==================== 2026-02-18T11:48:44.632604Z | 51983bd0-3153-4cd2-8f4f-744db23eb874 ====================
+11:48:44.632713 [info ]: Starting dbt LSP server
+11:48:44.632761 [info ]: Connecting to LSP client on port 8000
+11:48:44.635079 [info ]: Successfully connected to LSP client
+11:48:44.635112 [info ]: Creating LSP service...
+11:48:44.720191 [info ]: Creating LSP server...
+11:48:44.720228 [info ]: Starting LSP server...
+11:48:44.818439 [info ]: Started loading project
+11:48:44.819012 [info ]: Finished loading project [  0.00s]
+11:56:50.470305 [info ]: Started loading project
+11:56:50.470864 [info ]: Finished loading project [  0.00s]
+11:57:31.892191 [info ]: Started loading project
+11:57:31.892537 [info ]: Finished loading project [  0.00s]
+==================== 2026-02-18T12:01:19.448085Z | 64bd7f14-bc53-49cf-a2b2-1e0a5d6e165e ====================
+12:01:19.448218 [info ]: Starting dbt LSP server
+12:01:19.448278 [info ]: Connecting to LSP client on port 8000
+12:01:19.453440 [info ]: Successfully connected to LSP client
+12:01:19.453506 [info ]: Creating LSP service...
+12:01:19.526923 [info ]: Creating LSP server...
+12:01:19.526952 [info ]: Starting LSP server...
+12:01:19.580577 [info ]: Started loading project
+12:01:19.581662 [info ]: Finished loading project [  0.00s]
+12:07:39.790236 [info ]: Started loading project
+12:07:39.795203 [info ]: Loading profiles.yml
+12:07:39.905629 [debug]:    Started loading packages
+12:07:39.908476 [debug]:     Loaded [  0.00s] packages
+12:07:39.908531 [debug]:    Started loading internal packages
+12:07:39.922089 [debug]:     Loaded [  0.01s] internal packages
+12:07:39.922523 [info ]: Started parsing
+12:07:39.955577 [error]: dbt1013: Invalid model definition `my_weather_project.materialized`: invalid type: string "table", expected struct ProjectModelConfig at line 15 column 19
+  --> dbt_project.yml:15:19
+12:07:39.956191 [info ]: Finished loading project [  0.17s]
+12:07:39.959628 [debug]: Finished parsing models\sources.yml [  0.00s]
+12:07:39.964380 [debug]: Finished parsing models\staging\stg_weather.sql [  0.00s]
+12:07:39.964972 [info ]: Finished parsing [  0.04s]
+12:07:39.965588 [info ]: Cached model count updated: 1 models (estimate)
+12:07:39.965614 [info ]: Cached model count updated: 1 models (accurate)
+12:07:39.965708 [info ]: Started scheduling
+12:07:39.965928 [info ]: Finished scheduling [  0.00s]
+12:07:39.966105 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "airflow", schema: "public", table: "bronze_weather" }) and interval: None
+12:07:39.967156 [info ]: Started deferring state
+12:07:39.967202 [info ]: Finished deferring state [  0.00s]
+12:07:39.969505 [info ]: Started downloading schemas
+12:07:39.969659 [debug]: Started downloading relations
+12:07:39.969743 [debug]: Finished downloading relations [  0.00s]
+12:07:39.971338 [info ]: Finished downloading schemas [  0.00s]
+12:09:24.351976 [info ]: Loading profiles.yml
+12:31:57.659605 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+12:31:57.659605 [info ]: 
+==================== Execution Summary =====================
+Finished 'unknown' with 1 error [30m 38s]
+==================== 2026-02-18T12:52:45.465325Z | fcbc25b1-120e-4b36-9735-6e11e085269c ====================
+12:52:45.465495 [info ]: Starting dbt LSP server
+12:52:45.465573 [info ]: Connecting to LSP client on port 8000
+12:52:45.470317 [info ]: Successfully connected to LSP client
+12:52:45.470375 [info ]: Creating LSP service...
+12:52:45.644773 [info ]: Creating LSP server...
+12:52:45.644835 [info ]: Starting LSP server...
+12:52:45.790209 [info ]: Started loading project
+12:52:45.805211 [info ]: Loading profiles.yml
+12:52:45.904229 [debug]:    Started loading packages
+12:52:45.920160 [debug]:     Loaded [  0.02s] packages
+12:52:45.920374 [debug]:    Started loading internal packages
+12:52:45.985897 [debug]:     Loaded [  0.07s] internal packages
+12:52:45.987025 [info ]: Started parsing
+12:52:46.092688 [error]: dbt1013: Invalid model definition `my_weather_project.materialized`: invalid type: string "table", expected struct ProjectModelConfig at line 15 column 19
+  --> dbt_project.yml:15:19
+12:52:46.093217 [info ]: Finished loading project [  0.30s]
+12:52:46.104277 [debug]: Finished parsing models\sources.yml [  0.00s]
+12:52:46.115056 [debug]: Finished parsing models\staging\stg_weather.sql [  0.01s]
+12:52:46.116377 [info ]: Finished parsing [  0.13s]
+12:52:46.117878 [info ]: Cached model count updated: 1 models (estimate)
+12:52:46.117925 [info ]: Cached model count updated: 1 models (accurate)
+12:52:46.118078 [info ]: Started scheduling
+12:52:46.118414 [info ]: Finished scheduling [  0.00s]
+12:52:46.118927 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "airflow", schema: "public", table: "bronze_weather" }) and interval: None
+12:52:46.120498 [info ]: Started deferring state
+12:52:46.120682 [info ]: Finished deferring state [  0.00s]
+12:52:46.125348 [info ]: Started downloading schemas
+12:52:46.125545 [debug]: Started downloading relations
+12:52:46.125644 [debug]: Finished downloading relations [  0.00s]
+12:52:46.126329 [info ]: Finished downloading schemas [  0.00s]
+12:54:50.171357 [info ]: suggestion: Run 'dbt deps' to see the latest fusion compatible packages. For compatibility errors, try the autofix script: https://github.com/dbt-labs/dbt-autofix
+12:54:50.171357 [info ]: 
+==================== Execution Summary =====================
+Finished 'unknown' with 1 error [2m 5s]

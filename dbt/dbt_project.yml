@@ -1,0 +1,17 @@
+name: my_weather_project
+version: 1.0.0
+config-version: 2
+
+profile: default
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analyses"]
+macro-paths: ["macros"]
+
+models:
+  my_weather_project:
+    materialized: table
+    
+    
