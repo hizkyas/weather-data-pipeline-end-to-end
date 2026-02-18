@@ -1,1 +1,1 @@
-{"_invocation_id": "dc8c689e-4dea-4709-8427-8bfb25559308", "linked": {"0": {"name": "source.my_weather_project.raw.bronze_weather", "type": "source", "succ": [1]}, "1": {"name": "model.my_weather_project.stg_weather", "type": "model"}}}
+{"_invocation_id": "4d40b819-e7db-45fa-b716-c55a2b88683b", "linked": {"0": {"name": "source.my_weather_project.raw.bronze_weather", "type": "source", "succ": [1]}, "1": {"name": "model.my_weather_project.stg_weather", "type": "model", "succ": [2]}, "2": {"name": "model.my_weather_project.weather_daily_summary", "type": "model"}}}

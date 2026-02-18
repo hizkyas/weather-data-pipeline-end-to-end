@@ -1,4 +1,5 @@
 version: '3.8'
+
 services:
   postgres:
     image: postgres:15
@@ -13,6 +14,8 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    networks:
+      - airflow-network
 
   airflow-webserver:
     image: apache/airflow:2.10.0
@@ -21,9 +24,6 @@ services:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
-      - AIRFLOW__WEBSERVER__RBAC=False
-      - AIRFLOW__WEBSERVER__AUTH_BACKEND=airflow.api.auth.backend.default
-      # Combined all necessary packages into one line to avoid conflicts
       - _PIP_ADDITIONAL_REQUIREMENTS=pandas requests dbt-postgres psycopg2-binary sqlalchemy
     volumes:
       - ./dags:/opt/airflow/dags
@@ -35,3 +35,27 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+    networks:
+      - airflow-network
+
+  metabase:
+    image: metabase/metabase:latest
+    container_name: weather_viz_metabase
+    ports:
+      - "3000:3000"
+    environment:
+      - MB_DB_TYPE=postgres
+      - MB_DB_DBNAME=metabase_db
+      - MB_DB_PORT=5432
+      - MB_DB_USER=airflow
+      - MB_DB_PASS=airflow
+      - MB_DB_HOST=postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - airflow-network
+
+networks:
+  airflow-network:
+    driver: bridge
