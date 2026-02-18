@@ -1,6 +1,7 @@
-﻿### 🌦️ Project Status
+﻿### 🛠️ Project Status
 [![Project Checkup](https://github.com/hizkyas/weather-data-pipeline-end-to-end/actions/workflows/checkup.yml/badge.svg)](https://github.com/hizkyas/weather-data-pipeline-end-to-end/actions)
 
+---
 ---
 ---
 ---
