@@ -1,4 +1,4 @@
-![Project Checkup](https://github.com/your-username/modern-weather-pipeline/actions/workflows/checkup.yml/badge.svg)
+![Project Checkup](https://github.com/hizkyas/modern-weather-pipeline/actions/workflows/checkup.yml/badge.svg)
 
 # 🌦️ End-to-End Modern Weather Data Pipeline
 
