@@ -1,4 +1,7 @@
-![Project Checkup](https://github.com/hizkyas/modern-weather-pipeline/actions/workflows/checkup.yml/badge.svg)
+### ??? Project Status
+[![Project Checkup](https://github.com/hizkyas/modern-weather-pipeline/actions/workflows/checkup.yml/badge.svg)](https://github.com/hizkyas/modern-weather-pipeline/actions) 
+
+---
 
 # 🌦️ End-to-End Modern Weather Data Pipeline
 
