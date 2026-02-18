@@ -1,3 +1,5 @@
+![Project Checkup](https://github.com/your-username/modern-weather-pipeline/actions/workflows/checkup.yml/badge.svg)
+
 # 🌦️ End-to-End Modern Weather Data Pipeline
 
 A full-stack data engineering project that automates weather data ingestion, transformation, and visualization using the **Modern Data Stack (MDS)**.
